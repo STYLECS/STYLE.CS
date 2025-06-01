@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to top, #001f4d, #ffffff);
+  min-height: 100vh;
+  margin: 0;
+}
+nav{
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 700;
+    padding: 1rem 4rem;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 2rem;
+}
+nav ul li a.active {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 2rem;
+}
+nav div img{
+    width: 80px;
+    display: block;
+    transition: transform 0.2s ease;
+}
+nav div img:hover{
+    transform: scale(1.2);
+
+}
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem 10%;
+    margin-top: 100px; 
+}
+.container2 {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: black;
+    border: 4px solid #6200ff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+.container2:hover {
+    transform: scale(1.03);
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0 0 15px 15px;
+}
+.container2:hover{
+    transform: scale(1.03);
+}
+.container2:hover .overlay{
+    height: 100%;
+}
+h1{
+    width: 100%;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    font-family: none;
+    transform: rotate(-5deg)skewX(-5deg);
+}
+h2{
+    text-align: center;
+    font-family: none;
+    color: white;
+    font-size: 1.2vw;
+    margin: 20% auto 0 auto;
+    width: 90%;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
